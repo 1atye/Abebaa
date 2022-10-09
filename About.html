@@ -3,7 +3,6 @@
   <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>home</title>
     <style>
 *{
   margin: 0;
@@ -11,14 +10,16 @@
 }
 body{
   background: #000;
+  color: #fff;
 }
-.header{
-  min-height: 100vh;
+.sub-header{
+  height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/New.Gif);
   background-position: center;
   background-size: cover;
   position: relative;
+  color: #fff;
 }
 nav{
 margin: 0;
@@ -177,7 +178,7 @@ width: 150px;
 }
 
 nav {
-  background: #ff6200;
+  background: #0288D1;
   position: absolute;
   top: 0;
   right: 0;
@@ -254,226 +255,33 @@ nav {
   }
 }
 
-.content {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  h1 {
-    font-size: 70px;
-     animation: shotup 600ms ease-in-out;
-    animation-delay: 300ms;
-  }
+
 }
-.container{
-font-size: 20px;
+h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-}
-.container a{
-font-size: 20px;
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  border: 2px solid #0f0;
-  margin: 40px;
-  font-size: 1.4cm;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: 600;
-  transition: 0.5s;
-  -webkit-box-reflect: below 0px linear-gradient(transparent,#0002);
-  transition-delay: 0s;
-}
-.container a:hover{
-font-size: 20px;
-  transition-delay: 1.5s;
-  color: #000;
-  box-shadow: 0 0 10px #0f0,
-              0 0 20px #0f0,
-              0 0 40px #0f0,
-              0 0 80px #0f0,
-              0 0 1600px #0f0;
-}
-.container a span{
-font-size: 20px;
-  position: relative;
-  z-index: 100;
-}
-.container :nth-child(2){
-font-size: 20px;
-  filter: hue-rotate(80deg);
-}
-.container a::before{
-font-size: 20px;
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: transliteY(-50%);
-  width: 20px;
-  height: 2px;
-  left: -20px;
-  background: #0f0;
-  box-shadow: 5px 8px #0f0,
-              5px -8px 0 #0f0;
-  transition-delay: 1s,0.5s,0s,0s;
-  transition: width 0.5s,left 0.5s, height0.5s, box-shadow 0.5s;
-}
-.container a:hover::before{
-font-size: 20px;
-  height: 100%;
-  width: 100%;
-  top: 7px;
-  left: -2px;
-  box: 5px  0 #0f0,
-       5px  0 #0f0;
-  transition-delay: 0s,0.5s,1s,1s;
-}
-.container a::after{
-  content: '';
-font-size: 20px;
-  position: absolute;
-  top: 50%;
-  transform: transliteY(-50%);
-  width: 20px;
-  height: 2px;
-  right: -20px;
-  background: #0f0;
-  box-shadow: -5px 8px #0f0,
-              -5px -8px 0 #0f0;
-  transition-delay: 1s,0.5s,0s,0s;
-  transition: width 0.5s,left 0.5s, height0.5s, box-shadow 0.5s;
-}
-.container a:hover::after{
-  font-size: 20px;
-  height: 100%;
-  width: 100%;
-  top: 7px;
-  right: -2px;
-  box: -5px  0 #0f0,
-       -5px  0 #0f0;
-  transition-delay: 0s,0.5s,1s,1s;
-}
-
-}
-/*---- course ----*/
-.course{
-  margin: auto;
   text-align: center;
-  padding-top: 60px;
-  
-}
-h1{
-  color: #fff;
-  font-size: 36px;
-  font-weight: 600;
-}
-p{
-  color: #777;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
-}
-.row{
-  margin-top: 10%;
-  display: flex;
-  justify-content: space between;
-  white-space: 5px;
-}
-.col{
-  flex-basis: 50%;
-  background: black;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  margin-left: 12px;
-  padding: 20px 12px;
-  box-sizing: border-box;
-  transition: 0.5s;
-}
-.col:hover{
-  box-shadow: 0 0 20px 0px rgb(255,255,255);
-  background: #000;
-  color: #fff;
-}
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
+  padding: 100px;
+  font-size: 150px;
 }
 @media(max-width: 700px){
-.row{
-  flex-direction: column;
-}
-}
-/*----- campus -----*/
-.compus{
-  width: 80%;
-  margin: auto;
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding-top: 50px;
+  padding: 100px;
+  font-size: 60px;
 }
-.campus-col{
-  flex-basis: 32%;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
 }
-.campus-col img{
-  width: 100%;
-  display: block;
-}
-.layer{
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
-}
-.layer:hover{
-background: rgba(0,0,0,0.7);
-}
-.layer h3{
-  width: 100%;
-  font-weight: 500;
-  color: #fff;
-  font-size: 26px;
-  bottom: 0;
-  left: 0%;
-  text-align: center;
-  transform: transliteX(-50%);
-  position: absolute;
-  opacity: 0;
-  transition: 0.5s;
-}
-.layer:hover h3{
-  bottom: 49%;
-  opacity: 1;
-}
-.ty{
-  font-size: 200%;
-background: linear-gradient(-45deg, #181dff, #000aff,#2400ff,#ff0000,#bf23b5, #fa0000);
+span{
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
            -webkit-background-clip: text; 
             color: transparent; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-size: 25px;
 }
 @keyframes gradient {
 	0% {
@@ -486,39 +294,36 @@ background: linear-gradient(-45deg, #181dff, #000aff,#2400ff,#ff0000,#bf23b5, #f
 		background-position: 0% 50%;
 	}
 }
-span{
-  font-size: 30px;
-  font-weight:bold;
-background: linear-gradient(-45deg, #181dff, #000aff,#2400ff,#ff0000,#bf23b5, #fa0000);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-           -webkit-background-clip: text; 
-            color: transparent; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+.testimonials-col{
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #cd8a8a;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
 }
-h3{
-  color: #fff;
+.testimonials-col img{
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
 }
-lu{
-font-weight:bold;
-
-}
-
     </style>
   </head>
   <body>
-
-<section class="header">
-   
+    <section class="sub-header">
+ <a href="index.html"><img src="img/logo.png"></a>
+  <h1>ABOUT</h1>
+    </section>
 <div class="hamburger-icon" id="icon">
     <div class="icon-1" id="a"></div>
     <div class="icon-2" id="b"></div>
     <div class="icon-3" id="c"></div>
     <div class="clear"></div>
   </div>
- <a href="index.html"><img src="img/logo.png"></a>
+
   <nav id="nav">
     <div class="nav-links">
       <ul>
@@ -530,60 +335,30 @@ font-weight:bold;
       </ul>
     </div>
   </nav>
-  <div class="dark-blue" id="blue"></div>
-  <div class="text-box">
-    <h1>World's Biggest barber & beauty shop</h1>
-    <section class="12">
-    <p>welcome to our shop<br> our endless styles make's us your <lu>#1</lu> choice </p>
+
+  <h3>We have Four and half star</h3>
 </section>
+  <div>
+  <span>&starf;</span>
+  <span>&starf;</span>
+  <span>&starf;</span>
+  <span>&starf;</span>
+  <span>&star;</span>
   </div>
 
-</section>
-<div class="reveal">
- <section class="course">
-   <h1>Is ower shope clean?</h1>
-   <p>we offer the beast and clinest serveas ower customers love me</p>
-   
-   <div class="row">
-     <div class="col">
-       <h3>hair cut without beard</h3>
-       <p>we offer two type of cuts the one is without beard it is chipper than with bear it is 25$ </p>
-
-     </div>
-    <div class="col">
-       <h3>hair cut with beard</h3>
-      <p>as I told you on hte ferst paragraph it dose not have the same amount of money is 30$ </p>
-       </div>
-
- </section>
-<section class="campus">
-  <h1>Our Working space</h1>
-  <p>we have the clineast work space</p>
-  <div class="row">
-    <div class="campus-col">
-      <img src="img/Boy.jpg">
-      <div class="layer">
-        <h3>barber side</h3>
-      </div>
-    </div>
-    <div class="campus-col">
-      <img src="img/Girl.jpg">
-      <div class="layer">
-        <h3>beauty side</h3>
-      </div>
-    </div>
-    <div class="campus-col">
-      <img src="img/01.jpg">
-      <div class="layer">
-        <h3>Other picture barber</h3>
-      </div>
+<section class="testimonials">
+<h2>What make's us different?</h2>
+<p>We have Master barber and Master stylist</p>
+<div class="row">
+  <div class="testimonials-col">
+    <img src="img/20180212_235117.jpg">
+    <div>
+      <h3>Master barber Abeba G/mariame</h3>
     </div>
   </div>
+</div>
 </section>
-
-   </div>
-
-
+    </section>
    <script>
 var icon = document.getElementById("icon");
 var icon1 = document.getElementById("a");
@@ -617,7 +392,5 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
    </script>
-</section>
-</div>
   </body>
 </html>
